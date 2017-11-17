@@ -1,0 +1,54 @@
+@import 'theme/variables';
+
+.budgetItem {
+  display: flex;
+  flex-flow: column;  
+  font-size: 0.8em;  
+  @media only screen and (max-width: $screen-small) {    
+    align-items: center;   
+    text-align: center;    
+  }    
+}
+
+.neg {
+  color: $red;
+}
+.neg:before {
+  content: "-";
+}
+.pos {
+  color: $green;
+}
+.pos:before {
+  content: "+";
+}
+.category {
+  font-weight: lighter;
+  font-style: italic;
+  color:rgb(72, 72, 72); 
+}
+.category:after {
+  content: "]";
+}
+.category:before {
+  content: "[";
+}
+.button {
+  color: #fff;  
+  text-transform: uppercase;
+  background: rgb(28, 184, 65);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: .5em 1em;
+  text-decoration: none;
+  border: transparent;
+
+  width: 60px;
+  @media only screen and (max-width: $screen-small) {    
+    width:100%;
+  }  
+}
+
+.notFound {
+  color: $red;  
+}

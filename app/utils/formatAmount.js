@@ -16,4 +16,10 @@ export default function formatAmount(amount: number, showSign: boolean = true): 
     text: `${isNegative && showSign ? '-' : ''}${formatValue}`,
     isNegative,
   };
-}
+};
+
+export function formatPercent(amount: number): FormattedAmount {  
+  let roundAmount = Math.round(amount * 100) / 100;
+  const formatValue = Math.abs(roundAmount).toString();  
+  return "%" + `${formatValue}`    
+};
