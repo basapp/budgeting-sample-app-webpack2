@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="budgetItem"
+>
+  <div>
+    <h2>
+      Trader Joe's food
+       
+      <span
+        className="category"
+      >
+        Groceries
+      </span>
+    </h2>
+    <h4>
+      <span
+        className="neg"
+      >
+        %9.23
+      </span>
+    </h4>
+    <div
+      className="donutChart"
+    >
+      <div
+        height={316}
+        padding={8}
+        transform="translate(150,150)"
+        width={316}
+      />
+      <div
+        color={[Function]}
+        data={
+          Array [
+            Object {
+              "category": "Trader Joe's food",
+              "categoryId": 1,
+              "value": 9.23,
+            },
+            Object {
+              "category": "Others",
+              "categoryId": 0,
+              "value": 90.77,
+            },
+          ]
+        }
+        dataKey="categoryId"
+        dataLabel="category"
+        dataValue="value"
+        usePercentSign={true}
+      />
+    </div>
+    <input
+      className="button"
+      onClick={[Function]}
+      type="submit"
+      value="Back"
+    />
+  </div>
+</div>
+`;
+
+exports[`renders correctly no Transaction 1`] = `
+<div
+  className="budgetItem"
+>
+  <div>
+    <h2>
+      <span
+        className="notFound"
+      >
+        Transaction not found
+      </span>
+    </h2>
+    <br />
+    <input
+      className="button"
+      onClick={[Function]}
+      type="submit"
+      value="Back"
+    />
+  </div>
+</div>
+`;
